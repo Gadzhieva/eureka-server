@@ -1,0 +1,9 @@
+server:
+  port: 8761 #-- common port
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #-- we don't need to register our own eurelka server with ourselves, so false
+    fetch-registry: false #--we don't need to fetch a copy as well
